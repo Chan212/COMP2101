@@ -6,8 +6,8 @@
 #       reset the count to the maximum and tell the user they are not allowed to interrupt
 #       the count. If the script receives a QUIT signal, tell the user they found the secret
 #       to getting out of the script and exit immediately.
-trap reset 2
-trap foundSecret 3
+trap reset 
+trap foundSecret 
 
 #Task : on Signal QUIT
 function foundSecret {
