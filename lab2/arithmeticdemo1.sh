@@ -9,7 +9,10 @@
 #   - first divided by second gives X with a remainder of Y
 # Improve this script by calculating and displaying the first number raised to the power of the second number
 
-read -p "Give me two numbers, separated by a space" firstnum secondnum
+echo  "Give me First number"
+read firstnum
+echo "Give me second number"
+read secondnum
 
 sum=$((firstnum + secondnum))
 difference=$((firstnum - secondnum))
@@ -24,6 +27,6 @@ $firstnum plus $secondnum is $sum
 $firstnum minus $secondnum is $difference
 $firstnum times $secondnum is $product
 $firstnum divided by $secondnum is $dividend, with a remainder of $remainder
-- More precisely, it is $fpdividend
-  
+Displaying the $firstnum  raised to the power of the $secondnum  is $power
+  - More precisely, it is $fpdividend
 EOF
