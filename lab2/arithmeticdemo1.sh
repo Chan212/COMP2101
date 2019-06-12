@@ -16,6 +16,7 @@ difference=$((firstnum - secondnum))
 product=$((firstnum * secondnum))
 dividend=$((firstnum / secondnum))
 remainder=$((firstnum % secondnum))
+power=$((firstnum**secondnum))
 fpdividend=$(awk "BEGIN{printf \"%.2f\", $firstnum/$secondnum}")
 
 cat <<EOF
@@ -23,5 +24,6 @@ $firstnum plus $secondnum is $sum
 $firstnum minus $secondnum is $difference
 $firstnum times $secondnum is $product
 $firstnum divided by $secondnum is $dividend, with a remainder of $remainder
+Displaying the $firstnum  raised to the power of the $secondnum  is $power
   - More precisely, it is $fpdividend
 EOF
