@@ -24,6 +24,6 @@ $firstnum plus $secondnum is $sum
 $firstnum minus $secondnum is $difference
 $firstnum times $secondnum is $product
 $firstnum divided by $secondnum is $dividend, with a remainder of $remainder
-Displaying the $firstnum  raised to the power of the $secondnum  is $power
-  - More precisely, it is $fpdividend
+- More precisely, it is $fpdividend
+  Displaying the $firstnum  raised to the power of the $secondnum  is $power
 EOF
