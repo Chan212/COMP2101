@@ -12,9 +12,11 @@
 echo "Setuid files:"
 echo "============="
 find / -type f -executable -perm -4000 -ls 2>/dev/null | sort -k 3
-echo "Setgid files"
-echo "============="
+echo "Task 1 : Find Setgid files"
+echo "================================================================"
 find /  -executable -perm -2000 -ls 2>/dev/null | sort -k 3
-echo "Top 10 largest files"
-echo "top 10"
-sudo find / -type f  |  du -h | sort -rh | head -n 10
+echo "================================================================"
+echo " Task 2 : Find top 10 largest files"
+echo "Top 10"
+find / -type f  | du -h --block-size=M| sort -rh | head -n 10
+echo "================================================================"
